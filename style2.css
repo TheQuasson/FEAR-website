@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    background-color: black;
+ }
+.header{
+    color: red;
+    background-color: #000000;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0px 0px 30px rgb(255, 0, 0);
+    font-size: 180px;
+    filter: brightness(0.8);
+   
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .main{
+    width: content area;
+    border: 5px solid black;
+    padding: 1%;
+    margin: 10px;
+  }
+  .main2{
+    display: incline-block;
+   
+    width: max-width 100%;
+    height: 390px;
+    border: 5px solid rgb(255, 0, 0); /*rgb(121, 188, 243)*/
+    padding: 0%;
+    border-radius: 10px;
+    margin: 0px;
+  }
+  .notice{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-color: rgb(255, 0, 0);
+    -webkit-text-stroke-width: 0.3px;
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  .notice2{
+    text-align: center;
+    color:  rgb(255, 255, 255);
+    -webkit-text-stroke-color: rgb(255, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    font-size: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+  }
+  .notice3{
+    text-align: center;
+    color:  red;
+    text-shadow: 0px 0px 10px rgb(255, 0, 0);
+    font-size: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .content{
+    width: 85%;  
+    height: 100%;
+    background-color: darkred;
+    float: left;
+    font-weight: 300;
+    font-size: x-large;
+  }
+  .content2{
+    width: 70%;
+    height: ;
+    background-color: maroon;
+    float: inline-start;
+    font-weight: 300;
+    font-size: x-large;
+  }
+  .menu{
+    /*background-color: blue;*/
+    background-image: linear-gradient(red, black 40%);
+    height: 100vh;
+    width: 25%;
+    float: right;
+    padding: 0;
+}
+.menu3{
+    /*background-color: blue;*/
+    background-image: linear-gradient(red, black 40%);
+    height: 100vh;
+    width: 15%;
+    float: right;
+    padding: 0;
+}
+.menu2{
+    /*background-color: blue;*/
+    background-image: linear-gradient(red, black 40%);
+    height: 100vh;
+    width: 15%;
+    float: left;
+    padding: 0;
+}
+/* bar with spinning text */
+ .whitebar{
+  overflow: hidden;
+  width: 100%;
+  height: 35px;
+  float: left;
+  background-color: #e0e0e0;
+}
+/* Inner container styles */
+.scrolling-text-inner {
+  display: flex;
+  white-space: nowrap;
+  font-size: 8px;
+  font-weight: 600;
+  padding: 8px 0;
+}
+/* Text styles */
+.scrolling-text {
+  display: flex;
+}
+
+.scrolling-text-item {
+  padding: 0 30px;
+  font-size: 20px;
+}
+/* Apply the animation to the text items */
+.scrolling-text-inner>div {
+  animation: var(--direction) var(--marquee-speed) linear infinite;
+}
+/* Pause the animation when a user hovers over it */
+.whitebar:hover .scrolling-text-inner>div {
+  animation-play-state: paused;
+}
+/* Setting the Animation using Keyframes */
+@keyframes scroll-left {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
+@keyframes scroll-right {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
+
+
+
+
+
+  .font1{
+    width: 100%;
+    height: 70px;
+    color: #cf1919;
+    background-color: #e0e0e0;
+    font-size: 60px;
+    font-family: fantasy;
+}
+.magazine{
+  width: 30%;
+  border: 5px solid rgb(255, 255, 255);
+  padding: 1%;
+}
+#text1{
+    font-size: x-large;
+    text-align: center;
+
+}
+.button{
+  margin-top: 3px;
+  display: incline-block;
+  width: 75%;
+  height: 50px;
+  background-color: black;
+  background-color: maroon;
+  color: white;
+  font-size: large;
+  border-top: 10;
+  border-left: 10;
+  border-right: 10;
+  border-color: black;
+  border-width: 2px;
+}
+#button1{margin-top: 10px;}
+.button:hover{background-color: orangered;color: black;}
+.button:active{background-color: darkred;color: white;}
+.button:visited{background-color: maroon;    color: purple; }
+#ADD{color: white;font-size: 35px;margin-bottom: 10px;}
+#Halloween magazine{
+    color: maroon;
+    font-size: 25px;
+    margin: 0;
+
+}
+.fixed-leftSd,.fixed-rightSd{position:fixed;top:60px;width:160px;height:600px;z-index:9999;transform:translateZ(0)}
+#fixed-middleSd{position:fixed;
+  border-radius: 10px;
+   width:800px;
+   height:400px;
+   z-index:9999;
+   top: 50%;
+  left: 50%;
+  margin-top: -200px; /* Negative half of height. */
+  margin-left: -400px; /* Negative half of width. */
+   transform:translateZ(0);
+   background-image: url('./images/black.jpg');
+   padding: 5px;}
+.fixed-leftSd{left:0}
+.fixed-rightSd{right:0}
+.close-fixedSd{position:absolute;width:160px;height:15px;line-height:15px;font-size:11px;font-weight:400;top:-15px;left:0;text-align:center;background:#e0e0e0;color:#666;padding:5px 0;cursor:pointer}
+.close-middleSd{position:absolute;width:100%;height:50px;line-height:100%;font-size:40px;font-weight:100%;top:100%;left:0;text-align:center;background: rgb(124, 0, 0); /*rgb(121, 188, 243)*/;border-radius: 10px;color: #000;;padding:0px 0;cursor:pointer}
+@media screen and (max-width:800px){.fixed-leftSd,.fixed-rightSd{display:none;visibility:hidden;}}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  float: left;
+  background-color:#e0e0e0;
+  position:fixed;top:0%;z-index:9999;transform:translateZ(0);background-image: url("./images/black.jpg");padding: 5px;
+}
+
+.dropbtn {
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-image: url("./images/black.jpg");
+  border-radius: 10px;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  width: 60px;
+  height: 60px;
+  float: left;
+  background-color:#e0e0e0;
+  position:fixed;top:0%;z-index:9999;transform:translateZ(0);background-color: #e0e0e0;padding: 1px;border-radius: 10px;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #a70909;
+  min-width: 160px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px 8px rgb(102, 0, 0);
+  z-index: 1;
+  border: 2px solid black;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #dddddd93;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+/* link to site */
+ a.nav-link:link{text-decoration: none;}  a.nav-link:visited{color: black;text-decoration: none;} a.nav-link:hover{color: rgb(209, 0, 35);text-decoration: none;} a.nav-link:active{color: rgb(124, 0, 21);text-decoration: none;}
+
+
+ .magazineDesc{width: fit-content; height: 800px;background-color: maroon; z-index: 10000;
+ }
